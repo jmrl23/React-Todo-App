@@ -2,7 +2,7 @@ import { FC, FormEvent, FormEventHandler, useReducer, useRef } from 'react'
 import { PencilIcon, PlusIcon, TrashIcon } from '@heroicons/react/24/outline'
 import { v4 as uuidv4 } from 'uuid'
 
-export const App: FC<Record<string, never>> = () => {
+export const App: FC<never> = () => {
   const [todos, dispatch] = useReducer(
     todoReducer,
     JSON.parse(localStorage.getItem('todos') ?? '[]')
